@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <ul class="ul">
+                <li>
+                    <div class="logo"></div>
+                </li>
+                <li class="ulli">ROSE IMAGE GALLERY</li>
+            </ul>
+            <div class="hamburger" onclick="toggleSidebar()">&#9776;</div>
+            <div class="sidebar" id="sidebar">
+                <a href="javascript:void(0)" class="closebtn"
+                    onclick="toggleSidebar()">&times;</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u><b>ROSE IMAGE GALLERY</b></u>
+                <div class="imgdiv">
+                    <img src="omika.jpg">
+                    <img src="chitranshi.jpg">
+                    <img src="sherry.jpg">
+                    <img src="cyber.jpg">
+                    <img src="girl1.jpg">
+                    <img src="girl2.jpg">
+                    <img src="girl3.jpg">
+                    <img src="girl4.jpg">
+                    <img src="girl5.jpg">
+                    <img src="girl6.jpg">
+                    <img src="girl7.jpg">
+                    <img src="girl8.jpg">
+                    <img src="girl9.jpg">
+                    <img src="girl2.jpg">
+                    <img src="rose.jpg">
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="grid-container">
+        <div class="box"><img src="omika.jpg"
+            alt="Image 1"></div>
+        <div class="box"><img src="chitranshi.jpg" alt="Image 2"></div>
+        <div class="box"><img src="sherry.jpg"
+            alt="Image 3"></div>
+        <div class="box"><img src="cyber.jpg"
+            alt="Image 4"></div>
+        <div class="box"><img src="girl1.jpg"
+            alt="Image 5"></div>
+        <div class="box"><img src="girl2.jpg"
+            alt="Image 6"></div>
+        <div class="box"><img src="girl3.jpg"
+            alt="Image 7"></div>
+        <div class="box"><img src="girl4.jpg"
+            alt="Image 8"></div>
+        <div class="box"><img src="girl5.jpg"
+            alt="Image 9"></div>
+        <div class="box"><img src="girl6.jpg"
+            alt="Image 1"></div>
+        <div class="box"><img src="girl7.jpg"
+            alt="Image 2"></div>
+        <div class="box"><img src="girl8.jpg"
+            alt="Image 3"></div>
+        <div class="box"><img src="girl9.jpg"
+            alt="Image 4"></div>
+        <div class="box"><img src="girl2.jpg"
+            alt="Image 5"></div>
+        <div class="box"><img src="rose.jpg"
+            alt="Image 6"></div>
+    </div>
+    <footer class="footer">!! Happy Coding !!</footer>
+    <script>
+        function toggleSidebar() {
+            let sidebar = document.getElementById("sidebar");
+            sidebar.style.width = sidebar.style.width === "250px" ? "0" : "250px";
+        }
+    </script>
+</body>
+
+</html>
